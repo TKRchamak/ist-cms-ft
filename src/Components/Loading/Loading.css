@@ -1,0 +1,82 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+} */
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+}
+
+.ringContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ringContainer .ring{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top: 5px solid aqua;
+    margin: -50px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.ringContainer .ring::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: aqua;
+    box-shadow: 0px 0px 0px 5px #24ecff33,
+    0 0 0 10px #24ecff22,
+    0 0 0 20px #24ecff11,
+    0 0 60px aqua;
+}
+
+.ringContainer .ring:nth-child(2){
+    animation: animate 3s linear 1s infinite;
+}
+
+.ringContainer .ring:nth-child(3){
+    position: absolute;
+    top: -90px;
+    animation: animate 3s linear 2s infinite;
+}
+
+.ringContainer p{
+    position: absolute;
+    bottom: -150px;
+    color: #fff;
+    letter-spacing: 0.4em;
+    font-size: 1.5em;
+}
