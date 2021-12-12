@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
-import NoticeBoard from '../../NoticeBoard/NoticeBoard';
+import NoticeBoard from '../../Shared/NoticeBoard/NoticeBoard';
 import Course from '../Course/Course';
 import Founder from '../Founder/Founder';
 import Slider from '../Slider/Slider';

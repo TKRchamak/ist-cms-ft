@@ -32,14 +32,17 @@ const Navbar = () => {
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li className="nav-item p-2">
-                                        <Link className="nav-a" to="/home">Home</Link>
+                                        <Link className="nav-a" to="/">Home</Link>
                                     </li>
                                     <li className="nav-item p-2">
                                         <Link className="nav-a" to="/teacher">Faculty Members</Link>
                                     </li>
                                     <li className="nav-item p-2">
-                                        <Link className="nav-a" to="/cart/review">Admission</Link>
+                                        <Link className="nav-a" to="/student">Student</Link>
                                     </li>
+                                    {/* <li className="nav-item p-2">
+                                        <Link className="nav-a" to="/admission">Admission</Link>
+                                    </li> */}
                                     <li className="nav-item p-2">
                                     <Link to="/about">About</Link>
                                     </li>
@@ -110,8 +113,8 @@ const Navbar = () => {
                                 <FontAwesomeIcon icon={faWallet} />
                             </div>
                             <div>
-                                <h6>Cash on delivery</h6>
-                                <small>Lorem ipsum dolor amet consect</small>
+                                <h6>Scholarship</h6>
+                                <small>Scholarship for Good result</small>
                             </div>
                         </div>
                     </div>
@@ -122,7 +125,7 @@ const Navbar = () => {
                             </div>
                             <div>
                                 <h6>Help & Support</h6>
-                                <small>Call us : + 0123.4567.89</small>
+                                <small>Call us : +8801726937910</small>
                             </div>
                         </div>
                     </div>

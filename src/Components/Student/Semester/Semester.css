@@ -1,0 +1,18 @@
+.yearBtnStyle{
+    background-color: #e66702;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 5em;
+}
+.semesterBtnStyle{
+    background-color: #e66702;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 5em;
+}
+
+.cur{
+    background-color: #198754;
+}
