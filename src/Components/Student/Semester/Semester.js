@@ -1,18 +1,41 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Semester.css'
 
 const Semester = () => {
     return (
-        <div className='container pt-4 pb-4'>
+        <div className='container pt-4 pb-4' style={{color: '#fff'}}>
             <h2>Semesters</h2>
-             <hr />
-            <div className='d-flex justify-content-between pt-3'>
-                <p className='semesterBtnStyle'>1st Semester</p>
-                <p className='semesterBtnStyle'>2nd Semester</p>
-                <p className='semesterBtnStyle'>3rd Semester</p>
-                <p className='semesterBtnStyle'>4th Semester</p>
-                <p className='semesterBtnStyle'>5th Semester</p>
-                <p className='semesterBtnStyle cur'>6th Semester</p>
+            <hr />
+            <div className="container text-center">
+                <div className="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+                    <div className="col">
+                        <div className="p-3 border semesterBtnStyle">1st Semester</div>
+                    </div>
+                    <div className="col">
+                        <div className="p-3 border semesterBtnStyle">2nd Semester</div>
+                    </div>
+                    <div className="col">
+                        <div className="p-3 border semesterBtnStyle">3rd Semester</div>
+                    </div>
+                    <div className="col">
+                        <div className="p-3 border semesterBtnStyle">4th Semester</div>
+                    </div>
+                    <div className="col">
+                        <div className="p-3 border semesterBtnStyle">5th Semester</div>
+                    </div>
+                    <div className="col">
+                        <div className="p-3 border semesterBtnStyle">6th Semester</div>
+                    </div>
+                    <div className="col">
+                        <div className="p-3 border semesterBtnStyle">7th Semester</div>
+                    </div>
+                    <div className="col">
+                        <div className="p-3 border semesterBtnStyle cur">
+                            <Link style={{color: '#fff'}} to='/studentLecture'>8th Semester</Link>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* <div className='row text-center'>

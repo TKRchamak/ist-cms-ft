@@ -1,40 +1,34 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Footer from '../../Shared/Footer/Footer';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Profile from '../Profile/Profile';
 import TCourse from '../TCourse/TCourse';
 import tPic from '../../Images/rakibSir.jpg'
+import { teacherContext } from '../../../App';
 
 const TeacherPage = () => {
-    const user = {
-        "id": 1,
-        "name": "Md. Rakib Hossain",
-        "username": "Rakib",
-        "tPic": {tPic},
-        "email": "rakibhossainist@gmial.com",
-        "address": {
-            "street": "Kulas Light",
-            "suite": "Apt. 556",
-            "city": "Gwenborough",
-            "zipcode": "92998-3874",
-            "geo": {
-                "lat": "-37.3159",
-                "lng": "81.1496"
-            }
+    const [teachers, setTeachers] = useContext(teacherContext)
+    const user = teachers[0];
+
+    const courses = [
+        {
+            "code": "ece-102",
+            "courseName": 'Numerical Engineering',
+            "semester": 'ECE-1st semester',
+            'routine': '12.00am - 2.00pm'
         },
-        "phone": "01731318275",
-        "website": "rakibhossain.org",
-        "company": {
-            "name": "Romaguera-Crona",
-            "catchPhrase": "Multi-layered client-server neural-net",
-            "bs": "harness real-time e-markets"
+        {
+            "code": "ece-202",
+            "courseName": 'Computer Architecture',
+            "semester": 'ECE-4th semester',
+            'routine': '12.00am - 2.00pm'
         }
-    }
+    ]
     return (
         <div>
             <Navbar></Navbar>
-            <Profile user={user} pic={tPic}></Profile>
-            <TCourse></TCourse>
+            <Profile user={user}></Profile>
+            <TCourse courses={courses}></TCourse>
             <Footer></Footer>
         </div>
     );

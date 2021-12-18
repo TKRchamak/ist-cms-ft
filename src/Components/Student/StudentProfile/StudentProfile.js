@@ -6,7 +6,8 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import Footer from '../../Shared/Footer/Footer';
 import Semester from '../Semester/Semester';
 
-const StudentProfile = () => {
+const StudentProfile = ({}) => {
+    // console.log(students);
     const user = {
         "id": 1,
         "name": "Tonmoy Kumar",
